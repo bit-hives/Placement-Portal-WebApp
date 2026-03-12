@@ -49,7 +49,6 @@
       
       <div class="p-4 flex-grow-1 d-flex justify-content-center align-items-center">
         <div class="text-center">
-          <img src="https:
           <h3 class="fw-bold text-dark">Exam Module Offline</h3>
           <p class="text-muted fs-5 mx-auto" style="max-width: 500px;">
             The central placement examination coordination module will be enabled in Phase 3 of deployment. 

@@ -31,5 +31,12 @@ def create_app():
             db.session.commit()
     return app
 
+# create a global WSGI application object so imports in serverless wrappers
+# (or the vercel `api/app.py` helper) can grab it without re‑initializing.  
+# Vercel's Python runtime looks for either ``app`` or ``handler`` in the
+# entrypoint file.
+app = create_app()
+
 if __name__ == '__main__':
-    create_app().run(debug=True, port=5000)
+    # Local development
+    app.run(debug=True, port=5000)
